@@ -16,10 +16,6 @@
 		"ordered": {
 			"type": "boolean",
 			"default": true
-		},
-		"listStyle": {
-			"type": "string",
-			"default": "decimal"
 		}
 	},
 	"supports": {

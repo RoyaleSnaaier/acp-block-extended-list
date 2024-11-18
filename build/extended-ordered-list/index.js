@@ -67,61 +67,16 @@ function Edit({
               });
             }
           }
-        }), attributes.ordered ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.SelectControl, {
-          label: "Ordered List Style",
-          value: attributes.listStyle,
-          options: [{
-            label: 'Decimal',
-            value: 'decimal'
-          }, {
-            label: 'Lower Alpha',
-            value: 'lower-alpha'
-          }, {
-            label: 'Upper Alpha',
-            value: 'upper-alpha'
-          }, {
-            label: 'Lower Roman',
-            value: 'lower-roman'
-          }, {
-            label: 'Upper Roman',
-            value: 'upper-roman'
-          }],
-          onChange: v => setAttributes({
-            listStyle: v
-          })
-        }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.SelectControl, {
-          label: "Unordered List Style",
-          value: attributes.listStyle,
-          options: [{
-            label: 'Disc',
-            value: 'disc'
-          }, {
-            label: 'Circle',
-            value: 'circle'
-          }, {
-            label: 'Square',
-            value: 'square'
-          }, {
-            label: 'None',
-            value: 'none'
-          }],
-          onChange: v => setAttributes({
-            listStyle: v
-          })
         })]
       })
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("div", {
       ...blockProps,
       children: attributes.ordered ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("ol", {
         start: attributes.start,
-        style: {
-          listStyleType: attributes.listStyle
-        },
+        className: "list list-styled-ordered",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.InnerBlocks, {})
       }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)("ul", {
-        style: {
-          listStyleType: attributes.listStyle
-        },
+        className: "list list-styled-ordered",
         children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_3__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.InnerBlocks, {})
       })
     })]
@@ -187,15 +142,11 @@ function save({
   return attributes.ordered ? /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("ol", {
     ...blockProps,
     start: attributes.start,
-    style: {
-      listStyleType: attributes.listStyle
-    },
+    className: "list list-styled-ordered",
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.InnerBlocks.Content, {})
   }) : /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)("ul", {
     ...blockProps,
-    style: {
-      listStyleType: attributes.listStyle
-    },
+    className: "list list-styled-ordered",
     children: /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_1__.jsx)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_0__.InnerBlocks.Content, {})
   });
 }
@@ -282,7 +233,7 @@ module.exports = window["wp"]["data"];
   \**********************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"ac/extended-ol","version":"0.1.0","title":"AC: Extended Ordered List","category":"ac","icon":"editor-ol","description":"AC: Extended Ordered List","example":{},"allowedBlocks":["ac/extended-list-item"],"attributes":{"start":{"type":"string"},"ordered":{"type":"boolean","default":true},"listStyle":{"type":"string","default":"decimal"}},"supports":{},"textdomain":"todo-list","editorScript":"file:./index.js","editorStyle":"file:./index.css","viewScript":"file:./view.js"}');
+module.exports = /*#__PURE__*/JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"ac/extended-ol","version":"0.1.0","title":"AC: Extended Ordered List","category":"ac","icon":"editor-ol","description":"AC: Extended Ordered List","example":{},"allowedBlocks":["ac/extended-list-item"],"attributes":{"start":{"type":"string"},"ordered":{"type":"boolean","default":true}},"supports":{},"textdomain":"todo-list","editorScript":"file:./index.js","editorStyle":"file:./index.css","viewScript":"file:./view.js"}');
 
 /***/ })
 

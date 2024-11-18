@@ -7,11 +7,11 @@ export default function save( { attributes } ) {
 
 	return (
 		attributes.ordered ? (
-			<ol {...blockProps} start={attributes.start} style={{ listStyleType: attributes.listStyle }}>
+			<ol {...blockProps} start={attributes.start} className="list list-styled-ordered">
 				<InnerBlocks.Content />
 			</ol>
 		) : (
-			<ul {...blockProps} style={{ listStyleType: attributes.listStyle }}>
+			<ul {...blockProps} className="list list-styled-ordered">
 				<InnerBlocks.Content />
 			</ul>
 		)

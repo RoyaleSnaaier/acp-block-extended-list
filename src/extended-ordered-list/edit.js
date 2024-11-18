@@ -5,7 +5,7 @@
  */
 
 import {InnerBlocks, InspectorControls, useBlockProps} from '@wordpress/block-editor';
-import { PanelBody, TextControl, ToggleControl, SelectControl } from '@wordpress/components';
+import { PanelBody, TextControl, ToggleControl } from '@wordpress/components';
 
 import './editor.css';
 
@@ -40,43 +40,17 @@ export default function Edit( { attributes, setAttributes } ) {
 								setAttributes({ listStyle: 'disc' });
 							}
 						}}
-					/>
-					{attributes.ordered ? (
-						<SelectControl
-							label="Ordered List Style"
-							value={attributes.listStyle}
-							options={[
-								{ label: 'Decimal', value: 'decimal' },
-								{ label: 'Lower Alpha', value: 'lower-alpha' },
-								{ label: 'Upper Alpha', value: 'upper-alpha' },
-								{ label: 'Lower Roman', value: 'lower-roman' },
-								{ label: 'Upper Roman', value: 'upper-roman' },
-							]}
-							onChange={ v => setAttributes({ listStyle: v }) }
 						/>
-					) : (
-						<SelectControl
-							label="Unordered List Style"
-							value={attributes.listStyle}
-							options={[
-								{ label: 'Disc', value: 'disc' },
-								{ label: 'Circle', value: 'circle' },
-								{ label: 'Square', value: 'square' },
-								{ label: 'None', value: 'none' },
-							]}
-							onChange={ v => setAttributes({ listStyle: v }) }
-						/>
-					)}
 				</PanelBody>
 			</InspectorControls>
 
 			<div {...blockProps}>
 				{attributes.ordered ? (
-					<ol start={attributes.start} style={{ listStyleType: attributes.listStyle }}>
+					<ol start={attributes.start} className="list list-styled-ordered">
 						<InnerBlocks />
 					</ol>
 				) : (
-					<ul style={{ listStyleType: attributes.listStyle }}>
+					<ul className="list list-styled-ordered">
 						<InnerBlocks />
 					</ul>
 				)}

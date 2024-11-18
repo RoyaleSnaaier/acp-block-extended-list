@@ -1,1 +1,0 @@
-{"version":3,"file":"extended-ordered-list/style-index.css","mappings":";;;AAAA;CACC,yBAAyB;CACzB,WAAW;CACX,YAAY;AACb","sources":["webpack://todo-list/./src/extended-ordered-list/style.css"],"sourcesContent":[".wp-block-create-block-todo-list {\n\tbackground-color: #21759b;\n\tcolor: #fff;\n\tpadding: 2px;\n}\n"],"names":[],"sourceRoot":""}
