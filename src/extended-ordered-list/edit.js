@@ -46,11 +46,11 @@ export default function Edit( { attributes, setAttributes } ) {
 
 			<div {...blockProps}>
 				{attributes.ordered ? (
-					<ol start={attributes.start} className="list list-styled-ordered">
+					<ol start={attributes.start} className="list list-styled-ordered list-leading-zero">
 						<InnerBlocks />
 					</ol>
 				) : (
-					<ul className="list list-styled-ordered">
+					<ul className="list list-styled-unordered">
 						<InnerBlocks />
 					</ul>
 				)}

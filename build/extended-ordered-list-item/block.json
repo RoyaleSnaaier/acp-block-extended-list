@@ -27,6 +27,5 @@
     "className": false
   },
   "textdomain": "todo-list",
-  "editorScript": "file:./index.js",
-  "viewScript": "file:./view.js"
+  "editorScript": "file:./index.js"
 }

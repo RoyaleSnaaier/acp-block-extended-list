@@ -1,8 +1,8 @@
 {
-	"name": "todo-list",
+	"name": "acp-block-extended-list",
 	"version": "0.1.0",
-	"description": "Example block scaffolded with Create Block tool.",
-	"author": "The WordPress Contributors",
+	"description": "ACP Block Extended List is a custom block plugin for creating extended ordered lists in WordPress. This plugin provides additional styling and functionality for ordered lists.",
+	"author": "Admin columns",
 	"license": "GPL-2.0-or-later",
 	"main": "build/index.js",
 	"scripts": {

@@ -1,14 +1,14 @@
 <?php
 /**
  * Plugin Name:       acp-block-extended-list
- * Description:       Example block scaffolded with Create Block tool.
+ * Description:       ACP Block Extended List is a custom block plugin developed by Admin Columns. This plugin enables the creation of extended ordered lists in WordPress. * 
  * Requires at least: 6.6
  * Requires PHP:      7.2
  * Version:           0.1.0
- * Author:            The WordPress Contributors
+ * Author:            admin columns
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       todo-list
+ * Text Domain:       acp-block-extended-list
  *
  * @package CreateBlock
  */
