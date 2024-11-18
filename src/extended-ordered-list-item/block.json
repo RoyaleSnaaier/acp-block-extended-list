@@ -1,0 +1,24 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ac/extended-list-item",
+	"version": "0.1.0",
+	"title": "Extended List Item",
+	"category": "widgets",
+	"icon": "editor-ol",
+	"description": "Extended ordered list item.",
+	"example": {},
+	"parent": ["ac/extended-ordered-list"],
+	"attributes": {
+		"allowedBlocks": {
+			"type": "array",
+			"default": ["core/paragraph", "core/image", "core/code", "core/html", "core/shortcode"]
+		}
+	},
+	"supports": {
+		"className": false
+	},
+	"textdomain": "todo-list",
+	"editorScript": "file:./index.js",
+	"viewScript": "file:./view.js"
+}

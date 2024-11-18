@@ -1,0 +1,32 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "ac/extended-ol",
+	"version": "0.1.0",
+	"title": "AC: Extended Ordered List",
+	"category": "ac",
+	"icon": "editor-ol",
+	"description": "AC: Extended Ordered List",
+	"example": {},
+	"allowedBlocks": ["ac/extended-list-item"],
+	"attributes": {
+		"start": {
+			"type": "string"
+		},
+		"ordered": {
+			"type": "boolean",
+			"default": true
+		},
+		"listStyle": {
+			"type": "string",
+			"default": "decimal"
+		}
+	},
+	"supports": {
+
+	},
+	"textdomain": "todo-list",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"viewScript": "file:./view.js"
+}
